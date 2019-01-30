@@ -871,7 +871,7 @@ p{
   transform: translateX(-100%);
   visibility: visible;}
   100% {-webkit-transform: translateX(0);
-  transform: translateX(0);} 
+  transform: translateX(0);}
   }
 
 .pulse {-webkit-animation-name: pulse;
@@ -897,3 +897,8 @@ p{
     100% {-webkit-transform: scale3d(1, 1, 1);
     transform: scale3d(1, 1, 1);}
     }
+@media screen (max-width:480px) {
+    .section1{
+        background-image: url('../img/320px/Section1-320px.jpg');
+    }
+}
