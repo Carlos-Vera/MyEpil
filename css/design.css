@@ -105,6 +105,9 @@ p{
 
 /* sections
     -------------------------------------- */
+#pp-nav{
+    display: none;
+}
 .section{
    background-repeat: no-repeat;
 }
