@@ -3,17 +3,17 @@
 <link href="https://fonts.googleapis.com/css?family=Lato:300,400,700,900|Montserrat:300,300i,400,500,600,700,800,900|Open+Sans:300,400,600,700,800|Roboto:300,400,500,700,900" rel="stylesheet">
 @font-face {
     font-family: "arkitech-light";
-    src: url("fonts/arkitech/Arkitech Light.ttf");
+    src: url("../fonts/arkitech/Arkitech Light.ttf");
     src: local('?'),
-        url("fonts/arkitech/Arkitech Light.ttf") format("truetype"),
-        url("fonts/arkitech/Arkitech Medium.ttf") format("truetype");
+        url("../fonts/arkitech/Arkitech Light.ttf") format("truetype"),
+        url("../fonts/arkitech/Arkitech Medium.ttf") format("truetype");
 }
 @font-face {
     font-family: "arkitech-medium";
-    src: url("fonts/arkitech/Arkitech Medium.ttf");
+    src: url("../fonts/arkitech/Arkitech Medium.ttf");
     src: local('?'),
-    url("fonts/arkitech/Arkitech Medium.ttf") format("truetype"),
-    url("fonts/arkitech/Arkitech Light.ttf") format("truetype");
+    url("../fonts/arkitech/Arkitech Medium.ttf") format("truetype"),
+    url("../fonts/arkitech/Arkitech Light.ttf") format("truetype");
 }
 @font-face {
     font-family: "Gilroy-ExtraBold";
