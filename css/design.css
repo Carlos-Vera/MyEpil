@@ -162,7 +162,7 @@ p{
     position: relative;
     left: 6%;
     font-size: 2em;
-    margin-top: -10%;
+    margin-top: -4%;
     margin-bottom: 10%;
 }
 .tercio-left1{
@@ -222,6 +222,9 @@ div.linea{
     position: relative;
     margin: -30% 0 0 48%;
     color: #000;
+}
+#section6 div div.tercio-left div p{
+    margin-top:-20%;
 }
 #section6 div div.tercio-central div p{
     margin-top:-19%
