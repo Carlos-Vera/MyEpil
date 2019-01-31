@@ -111,33 +111,30 @@ p{
 .section{
    background-repeat: no-repeat;
 }
+#section1, #section2, #section3, #section4, #section5, #section6, #section7{
+    background-size: 100%;
+    height: 100%;
+}
 #section1 {
    background-image: url('../img/Section1-320px.jpg');
-   background-size: 100%;
-   height: 100%;
 }
 #section1 > div > a{
     margin-top: 4em;
 }
 #section2 {
    background-image: url('../img/Section2-320px.jpg');
-   background-size: 100%;
-   height: 100%;
 }
 #section3 {
    background-image: url('../img/Section3-320px.jpg');
-   background-size: 100%;
-   height: 100%;
 }
 #section4 {
    background-image: url('../img/Section4-320px.jpg');
-   background-size: 100%;
-   height: 100%;
 }
 #section5 {
    background-image: url('../img/Section5-320px.jpg');
-   background-size: 100%;
-   height: 100%;
+}
+#section6 {
+   background-image: url('../img/Section6-320px.jpg');
 }
 .right-site {
     position: absolute;
@@ -160,6 +157,13 @@ p{
 }
 .top1{
     top:29%;
+}
+.top5{
+    position: relative;
+    left: 6%;
+    font-size: 2em;
+    margin-top: -10%;
+    margin-bottom: 10%;
 }
 .tercio-left1{
     display: inline-table;
@@ -198,18 +202,33 @@ p{
 }
 
 .title-light, .title-light1,
-.subtitle{
+.subtitle, .par-prices{
     font-family: 'Gilroy-Light', 'Open Sans', sans-serif;
     color: #000;
     font-size: .75em;
 }
-.title{
+.title, .title-prices, .title-prices-central{
     font-family: 'Gilroy-ExtraBold', 'Open Sans', sans-serif;
     color: #000;
     font-size: 1.5em;
     line-height: .7em;
 }
-
+div.linea{
+    display: none;
+}
+#section6 div div.tercio-left div p,
+#section6 div div.tercio-central div p,
+#section6 div div.tercio-right div p{
+    position: relative;
+    margin: -30% 0 0 48%;
+    color: #000;
+}
+#section6 div div.tercio-central div p{
+    margin-top:-19%
+}
+div.tercio-right{
+    margin-top: 12%;
+}
 .MyEpil, .MyEpil-Black{
     font-family: 'arkitech-light', 'arkitech-medium', 'Open Sans', sans-serif;
     color: #333;
@@ -268,12 +287,27 @@ p{
 #section4 div div h3{
     line-height: 1em;
 }
-.tercio-left1 h3,
-.tercio-central1 h3,
-.tercio-right1 h3{
+.tercio-left1 h3, .tercio-left,
+.tercio-central1 h3, .tercio-central,
+.tercio-right1 h3, .tercio-right{
     position: relative;
     left: 18%;
     margin-top: 2%;
+}
+.tercio-left, .tercio-central, .tercio-right{
+    left:10%;
+}
+#section6 div div.tercio-central div ul,
+#section6 div div.tercio-left div ul,
+#section6 div div.tercio-right div ul{
+    margin-top: 2%;
+}
+#section6 div div.tercio-left div a.bottom-precio,
+#section6 div div.tercio-central div a,
+#section6 div div.tercio-right div a.bottom-precio{
+    position: relative;
+    left: 45%;
+    color: #000;
 }
 .tercio-central1 h3,
 .tercio-right1 h3{
@@ -299,7 +333,12 @@ div.tercio-right1 h5{
     font-size: 2.5em;
     margin-top: -20px;
 }
-
+.rublo{
+    font-size: .5em;
+}
+#section6 div div.tercio-central div{
+    margin-top: 20%;
+}
 
 
 
