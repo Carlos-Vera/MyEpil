@@ -257,7 +257,7 @@ div.linea, div.mapa{
 div.tercio-right{
     margin-top: 12%;
 }
-.MyEpil, .MyEpil-Black{
+.MyEpil {
     font-family: 'arkitech-light', 'arkitech-medium', 'Open Sans', sans-serif;
     color: #333;
     font-size: 1em;
@@ -267,7 +267,13 @@ div.tercio-right{
     top: 15px;
 }
 .MyEpil-black{
+    font-family: 'arkitech-light', 'arkitech-medium', 'Open Sans', sans-serif;
     color: #fff;
+    font-size: 1em;
+    position: absolute;
+    z-index: 300;
+    left: 5px;
+    top: 15px;
 }
 .precio-diez{
     font-family: 'Gilroy-ExtraBold', 'Open Sans', sans-serif;
@@ -416,15 +422,30 @@ div.tercio-right1 h5{
     animation: jump 1.5s ease 0s infinite normal ;
 }
 
-@media only screen and (max-width: 420px){
+@media only screen and (min-width: 414px){
+    .precio-diez{top:75%;}
+    #section2 div div h6, #section3 div div h6{top:80%;}
+    #section6 div div.tercio-central div p{margin-top: -17%;}
+    #section6 div div.tercio-right div p{margin: -24% 0 0 48%;}
+    .social-icons{display: inline-block; width: 50%; top:93%; left: 3%;}
+    .social-icons a{margin-bottom: 0; margin-right: 5%;}
+    .contactMe.medium{max-width: 380px;}
+    .phones{margin:-12% 0 0 0;}
+    .contactMe .field.cm-date{background-image: url(../contactme/imgs/cal1.png);}
+    .contactMe .field.cm-time{background-image: url(../contactme/imgs/time1.png);}
+    #section1{background-image: url('../img/Section1-414px.jpg');}
+    #section2{background-image: url('../img/Section2-414px.jpg');}
+    #section3{background-image: url('../img/Section3-414px.jpg');}
+    #section4{background-image: url('../img/Section4-414px.jpg');}
+    .right-site{top:85%;left:57%;}
+    #section2 div div a, #section3 div div a{top:85%;}
+}
+
+@media only screen and (min-width: 600px){
 
 }
 
-@media only screen and (max-width: 600px){
-
-}
-
-@media only screen and (max-width: 767px){
+@media only screen and (min-width: 767px){
 
 }
 
