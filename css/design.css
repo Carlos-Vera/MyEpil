@@ -198,12 +198,40 @@ p{
     transition-duration: 1s;
 }
 #menu li.active a{
-    color:#ff0000;
+    color:#ff0000!important;
 }
 #menu li a{
     color:#000;
 }
-
+.pp-viewing-top a#MyEpil, .pp-viewing-man a#MyEpil,
+.pp-viewing-tech a#MyEpil, .pp-viewing-features a#MyEpil,
+.pp-viewing-price a#MyEpil, #MyEpil{
+    font-family: 'arkitech-light', 'arkitech-medium', 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 1em;
+    position: absolute;
+    z-index: 300;
+    left: 5px;
+    top: 15px;
+    transition-delay: .6s;
+    transition-duration: 3s;
+}
+.pp-viewing-woman a#MyEpil, .pp-viewing-contact a#MyEpil{
+    font-family: 'arkitech-light', 'arkitech-medium', 'Open Sans', sans-serif;
+    color: #fff;
+    font-size: 1em;
+    position: absolute;
+    z-index: 300;
+    left: 5px;
+    top: 15px;
+    transition-delay: .7s;
+    transition-duration: 3s;
+}
+.pp-viewing-contact #menu li a{
+    color: #fff;
+    transition-delay: .5s;
+    transition-duration: 3s;
+}
 .title-light, .title-light1,
 .subtitle, .par-prices{
     font-family: 'Gilroy-Light', 'Open Sans', sans-serif;
@@ -256,24 +284,6 @@ div.linea, div.mapa{
 }
 div.tercio-right{
     margin-top: 12%;
-}
-.MyEpil {
-    font-family: 'arkitech-light', 'arkitech-medium', 'Open Sans', sans-serif;
-    color: #333;
-    font-size: 1em;
-    position: absolute;
-    z-index: 300;
-    left: 5px;
-    top: 15px;
-}
-.MyEpil-black{
-    font-family: 'arkitech-light', 'arkitech-medium', 'Open Sans', sans-serif;
-    color: #fff;
-    font-size: 1em;
-    position: absolute;
-    z-index: 300;
-    left: 5px;
-    top: 15px;
 }
 .precio-diez{
     font-family: 'Gilroy-ExtraBold', 'Open Sans', sans-serif;
@@ -411,6 +421,10 @@ div.tercio-right1 h5{
     position: absolute;
     bottom: -3px;
     right: 0;
+    background-image: url('../img/mapa-320.png');
+    background-repeat: no-repeat;
+    width: 74px;
+    height: 80px;
 }
 .pointer-mobile{
     position: absolute;
@@ -431,14 +445,16 @@ div.tercio-right1 h5{
     .social-icons a{margin-bottom: 0; margin-right: 5%;}
     .contactMe.medium{max-width: 380px;}
     .phones{margin:-12% 0 0 0;}
-    .contactMe .field.cm-date{background-image: url(../contactme/imgs/cal1.png);}
-    .contactMe .field.cm-time{background-image: url(../contactme/imgs/time1.png);}
+    .contactMe .field.cm-date{background-image: url('../contactme/imgs/cal1.png');}
+    .contactMe .field.cm-time{background-image: url('../contactme/imgs/time1.png');}
     #section1{background-image: url('../img/Section1-414px.jpg');}
     #section2{background-image: url('../img/Section2-414px.jpg');}
     #section3{background-image: url('../img/Section3-414px.jpg');}
     #section4{background-image: url('../img/Section4-414px.jpg');}
     .right-site{top:85%;left:57%;}
     #section2 div div a, #section3 div div a{top:85%;}
+    .mapa-mobile{background-image: url('../img/mapa-414.png');width: 120px;height: 120px;}
+    .pointer-mobile{right: 37px;bottom: 48px;}
 }
 
 @media only screen and (min-width: 600px){
@@ -446,9 +462,87 @@ div.tercio-right1 h5{
 }
 
 @media only screen and (min-width: 767px){
+    #section1, #section2, #section3, #section4, #section5, #section6, #section7 {
+    background-size: 100%;height: 100.1%;}
+    #section1{background-image: url('../img/Section1-768px.jpg');}
+    #section2{background-image: url('../img/Section2-768px.jpg');}
+    #section3{background-image: url('../img/Section3-768px.jpg');}
+    #section4{background-image: url('../img/Section4-768px.jpg');}
+    .pp-viewing-top a#MyEpil, .pp-viewing-man a#MyEpil, .pp-viewing-tech a#MyEpil,
+    .pp-viewing-features a#MyEpil, .pp-viewing-price a#MyEpil, #MyEpil{font-size:1.5em;left:10px;}
+    #menu li{font-size:1.1em;margin:.7% 0;}
+    .right-site{top:82%;left:55%;}.right-site3{top:75%;}
+    .title, .title-prices, .title-prices-central{font-size:2.5em;line-height:.8em;}
+    #section1 div a {margin-top:4.8em;font-size:1.5em;}
+    .pp-viewing-woman a#MyEpil, .pp-viewing-contact a#MyEpil{
+        font-family: 'arkitech-light', 'arkitech-medium', 'Open Sans', sans-serif;
+        font-size: 1.5em;left: 10px;}
+    .precio-diez{top:77%;font-size:2.5em;}
+    #section2 div div h6{top:81.5%;font-size:1.8em;}
+    #section3 div div a{top:93%;font-size:2em;} #section2 div div a {top:87%;}
+    .bottom-normal{font-size:2em;}.top{top:42%;}
+    #section3 .precio-diez{top:82%;} #section3 h6.title-light{top:87%;font-size:1.8em;}
+    #section4 .title-light1 {font-size: 1.8em;}
+    .tercio-left1{padding-top:0;}.black{font-size:3em;}.tercio-central1 i{font-size:3.5em;}
+    div.tercio-left1 h4, div.tercio-right1 h5, div.tercio-central1 h5{font-size:1.2em;left:14%;line-height:1.1em;}
+    .tercio-right1 h3, .tercio-central1 h3, .tercio-left1 h3{left:13%;}
+    #section5 div div a.bottom-normal{left:13%;}
+    .par-prices{font-size:1.1em;}
+    .tercio-central{margin-top:17%;} div.tercio-right{margin-top:14%;}p.precio{font-size:3em;}
+    #section6 div div.tercio-left div a.bottom-precio, #section6 div div.tercio-central div a,
+    #section6 div div.tercio-right div a.bottom-precio{left:46%;font-size:1.5em;}
+    .contactMe.medium{max-width:580px;}.contactMe{margin:0 auto;margin-bottom: 5%;}
+    .title-contact{margin:0 0 0 12%;}.text-address{font-size:1.5em;left: 13%;}
+    .social-icons{left: 13%;font-size:1.5em;}
+    .mapa-mobile{background-image: url('../img/mapa-768.png');width:223px;height:220px;}
+    .pointer-mobile{right:68px;bottom:98px;font-size:2.5em;}
+    .contactMe input, .contactMe .select2-container .select2-selection{height:50px;}
+    .phones{margin:-10% 0 0 0;}
+    .contactMe .select2-container .select2-selection .select2-selection__rendered{line-height:47px;}
+    .select2-container--default .select2-selection--single .select2-selection__arrow b{top:30%;}
+}
+@media only screen and (min-width:1024px){
+    #section1{background-image: url('../img/Section1-1024px.jpg');}
+    #section2{background-image: url('../img/Section2-1024px.jpg');}
+    #section3{background-image: url('../img/Section3-1024px.jpg');}
+    #section4{background-image: url('../img/Section4-1024px.jpg');}
+    .pp-viewing-top a#MyEpil, .pp-viewing-man a#MyEpil, .pp-viewing-tech a#MyEpil,
+    .pp-viewing-features a#MyEpil, .pp-viewing-price a#MyEpil, #MyEpil,
+    .pp-viewing-woman a#MyEpil, .pp-viewing-contact a#MyEpil{font-size:2em;left:15px;}
+    #menu li{font-size:1.3em;margin:.7% 0;}
+    .title, .title-prices, .title-prices-central{font-size:3.5em;}
+    .title-light{line-height:.4em;}
+    #section1 div a{margin-top:5em;font-size:2.2em;}
+    .precio-diez{font-size:4em;} #section2 div div h6{top:83.5%;font-size:2.7em;}
+    .bottom-normal{font-size:2.2em;}#section2 div div a{top: 90%;}
+    #section3 h6.title-light{top: 88%;font-size: 2.7em;}
+    #section4 .title-light1{font-size: 2.7em;}.top{top: 44%;}
+    div.tercio-left1 h4, div.tercio-right1 h5, div.tercio-central1 h5{font-size: 1.8em;}
+    .black{font-size: 5em;}.black, .black2{margin-top:-22px;}
+    .tercio-central1 i{font-size: 6em;margin-top: -47px;left: 2%;}
+    .par-prices{font-size: 1.8em;}p.precio{font-size: 5em;}.top5{margin-bottom: 4%;}
+    #section6 div div.tercio-left div a.bottom-precio{font-size: 2.5em;}
+    .tercio-central{margin-top: 13%;}div.tercio-right{margin-top: 12%;}
+    .contactMe.medium{max-width:650px;}.title-contact{font-size: 5em;}
+    .contactMe{margin-bottom: 10%;}.text-address{font-size: 2em;left: 18%;}
+    .phones{left: 47%;width: 50%;}.social-icons{left: 17%;font-size: 2.5em;}
+    .contactMe .field, .contactMe *{font-size: 18px;}.contactMe input, .contactMe .select2-container .select2-selection{height:60px;}
+    .contactMe textarea{height: 140px;}.mapa-mobile{background-image:url('../img/mapa-1024.png');width:270px;height:270px;}
+    .pointer-mobile{right: 80px;bottom: 110px;font-size: 4em;}
+    .contactMe .select2-container .select2-selection .select2-selection__rendered{height:60px;font-size:16px;line-height:60px;}
+}
+@media only screen and (min-width: 1365px){
+    #section1{background-image: url('../img/Section1-1366px.jpg');}
+    #section2{background-image: url('../img/Section2-1024px.jpg');}
+    #section3{background-image: url('../img/Section3-1024px.jpg');}
+    #section4{background-image: url('../img/Section4-1024px.jpg');}
+    #pp-nav{display:inline;}
+    #menu{display:inline-block;width:80%;top:1%;right:1%;}
+    #menu li{font-size:1em;margin:0 .7%;}
+    #menu li.active{border-bottom:2px solid #ff0000;padding-bottom:5px;padding-right:0;border-right:none;}
+    #MyEpil{left:auto;right:2%;top:94%;}
 
 }
-
 @media only screen and (min-width: 1920px) {
 
     /* Fonts CSS
