@@ -591,10 +591,12 @@ div.tercio-right1 h5{
     .contactMe .field, .contactMe *{font-size:16px;}.contactMe input, .contactMe .select2-container .select2-selection{height:40px;}
     .text-address{font-size:1.2em;left:5%;}.contactMe textarea{height:85px;}
     .phones{left: 17%;width: 50%;margin:-4% 0 0 0;}.social-icons{left: 5%;font-size:1.5em;}
-    i.pointer{position:absolute;top:42%;font-size:4em;color:#ff0000;left:46%;}
+    i.pointer{position:absolute;top:42%;font-size:4em;color:#ff0000;left:46%;-webkit-animation: jump 1.5s ease 0s infinite normal;
+    animation: jump 1.5s ease 0s infinite normal;}
     div.mapa{background-image: url('../img/mapa-1366.jpg');background-repeat:no-repeat;height:100%;width:50%;}
     #section5 div div:nth-child(4) a{left:34%;top:82%;}
     .pp-viewing-contact div#pp-nav{right: -5%;transition-duration:1s;}
+    .social-icons a{color:#fff;}
 }
 @media only screen and (min-width: 1920px) {
     #section1{background-image: url('../img/Section1-1920px.jpg');}
@@ -613,6 +615,9 @@ div.tercio-right1 h5{
     #section6 div div.tercio-left div p, #section6 div div.tercio-right div p{margin:0 0 7% 9%;}
     #section6 div div.tercio-central div p{margin:0 0 10% 9%;}.contactMe.medium{max-width:650px;}
     .contactMe input, .contactMe .select2-container .select2-selection{height: 60px;}
+    .social-icons{font-size: 2em;}.text-address{font-size: 1.7em;}.contactMe textarea{height:140px;}
+    div.mapa{background-image: url('../img/mapa-1920.jpg');background-repeat:no-repeat;height:100%;width:50%;}
+    i.pointer{top:45%;left:48%;}
 
 
 /* Animations
