@@ -181,6 +181,12 @@ p{
     right: 2%;
     z-index: 100;
     text-align: right;
+    -webkit-animation-name: slideInDown;
+    animation-name: slideInDown;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
 }
 #menu > li{
     display: inline-block;
@@ -412,6 +418,14 @@ div.tercio-right1 h5{
     top: 45%;
     right: 0;
 }
+.pp-viewing-contact .social-icons{
+    -webkit-animation-name: slideInLeft;
+    animation-name: slideInLeft;
+    -webkit-animation-duration: 1s;
+    animation-duration: 1s;
+    -webkit-animation-fill-mode: both;
+    animation-fill-mode: both;
+}
 .social-icons a{
     margin-bottom: 45%;
 }
@@ -617,7 +631,7 @@ div.tercio-right1 h5{
     .contactMe input, .contactMe .select2-container .select2-selection{height: 60px;}
     .social-icons{font-size: 2em;}.text-address{font-size: 1.7em;}.contactMe textarea{height:140px;}
     div.mapa{background-image: url('../img/mapa-1920.jpg');background-repeat:no-repeat;height:100%;width:50%;}
-    i.pointer{top:45%;left:48%;}#section4 .left-site{left:15%;}
+    i.pointer{top:50%;left:48%;}#section4 .left-site{left:15%;}
 
 
 /* Animations
@@ -817,3 +831,47 @@ div.tercio-right1 h5{
   -webkit-transform: translateX(100%);
   transform: translateX(100%);}
   }
+  .slideInDown {
+  -webkit-animation-name: slideInDown;
+  animation-name: slideInDown;
+  -webkit-animation-duration: 1s;
+  animation-duration: 1s;
+  -webkit-animation-fill-mode: both;
+  animation-fill-mode: both;
+  }
+  @-webkit-keyframes slideInDown {
+  0% {-webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  visibility: visible;}
+  100% {-webkit-transform: translateY(0);
+  transform: translateY(0);}
+  }
+  @keyframes slideInDown {
+  0% {-webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
+  visibility: visible;}
+  100% {-webkit-transform: translateY(0);
+  transform: translateY(0);}
+  }
+  .slideInLeft {
+   -webkit-animation-name: slideInLeft;
+   animation-name: slideInLeft;
+   -webkit-animation-duration: 1s;
+   animation-duration: 1s;
+   -webkit-animation-fill-mode: both;
+   animation-fill-mode: both;
+   }
+   @-webkit-keyframes slideInLeft {
+   0% {-webkit-transform: translateX(-100%);
+   transform: translateX(-100%);
+   visibility: visible;}
+   100% {-webkit-transform: translateX(0);
+   transform: translateX(0);}
+   }
+   @keyframes slideInLeft {
+   0% {-webkit-transform: translateX(-100%);
+   transform: translateX(-100%);
+   visibility: visible;}
+   100% {-webkit-transform: translateX(0);
+   transform: translateX(0);}
+   }
