@@ -4,7 +4,8 @@
 
 DESCRIPTION:
 
-MyEpil es una plantilla HTML5 que se puede adaptar a multiples empresas o sectores. Diseñada y creada
+MyEpil es una plantilla HTML5 que se puede adaptar a multiples empresas o sectores.
+Diseñada y creada por Carlos Vera | VeraDesign para el cliente Madrid Bodytech Technologies S.L.
 
 
 

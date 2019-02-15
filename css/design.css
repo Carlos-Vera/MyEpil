@@ -410,14 +410,23 @@ div.tercio-right1 h5{
 .contactMe textarea{
     height: 70px;
 }
-.social-icons{
+/*.social-icons{
     font-size: 1.2em;
     position: absolute;
     display: inline-grid;
     width: 31px;
     top: 45%;
     right: 0;
+}*/
+.social-icons{
+    font-size: 1.2em;
+    position: absolute;
+    display: inline-flex;
+    width: 31px;
+    bottom: 2%;
+    left: 2%;
 }
+div.social-icons a i{color: #fff;margin-right:45%;}
 .pp-viewing-contact .social-icons{
     -webkit-animation-name: slideInLeft;
     animation-name: slideInLeft;
@@ -426,9 +435,9 @@ div.tercio-right1 h5{
     -webkit-animation-fill-mode: both;
     animation-fill-mode: both;
 }
-.social-icons a{
+/*.social-icons a{
     margin-bottom: 45%;
-}
+}*/
 .mapa-mobile{
     position: absolute;
     bottom: -3px;
