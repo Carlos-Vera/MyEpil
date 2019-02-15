@@ -410,14 +410,6 @@ div.tercio-right1 h5{
 .contactMe textarea{
     height: 70px;
 }
-/*.social-icons{
-    font-size: 1.2em;
-    position: absolute;
-    display: inline-grid;
-    width: 31px;
-    top: 45%;
-    right: 0;
-}*/
 .social-icons{
     font-size: 1.2em;
     position: absolute;
@@ -544,7 +536,7 @@ div.social-icons a i{color: #fff;margin-right:45%;}
     .tercio-central{margin-top: 13%;}div.tercio-right{margin-top: 12%;}
     .contactMe.medium{max-width:650px;}.title-contact{font-size: 5em;}
     .contactMe{margin-bottom: 10%;}.text-address{font-size: 2em;left: 18%;}
-    .phones{left: 47%;width: 50%;}.social-icons{left: 17%;font-size: 2.5em;}
+    .phones{left: 47%;width: 50%;}.social-icons{display: inline-grid;width: 31px;top: 45%;left: 17%;font-size: 2.5em;}
     .contactMe .field, .contactMe *{font-size: 18px;}.contactMe input, .contactMe .select2-container .select2-selection{height:60px;}
     .contactMe textarea{height: 140px;}.mapa-mobile{background-image:url('../img/mapa-1024.png');width:270px;height:270px;}
     .pointer-mobile{right: 80px;bottom: 110px;font-size: 4em;}
